@@ -1,3 +1,4 @@
+#!/usr/bin/pytho3
 """This module represents the pascal triangle of n numbers"""
 
 
