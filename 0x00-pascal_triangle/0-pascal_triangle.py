@@ -1,4 +1,4 @@
-#!/usr/bin/pytho3
+#!/usr/bin/python3
 """This module represents the pascal triangle of n numbers"""
 
 
