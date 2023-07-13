@@ -9,10 +9,14 @@ def minOperations(n):
     of operations to result in n
     """
     # first get the prime numbers of n
-    factors = []
-    for i in range(2, n + 1):
-        while n % i == 0:
-            factors.append(i)
-            n //= i
-    # the sum of the prime numbers is the minimum operations
-    return sum(factors)
+    if n == 1:
+        return 0
+    operations = 0
+    divisor = 2
+    while n > 1:
+        if n % 2 == 0:
+            operations += divisor
+            n //= divisor
+        else:
+            divisor += 1
+    return operations
