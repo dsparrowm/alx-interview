@@ -25,11 +25,11 @@ def validUTF8(data):
                 leading_one_mask = leading_one_mask >> 1
                 # If the byte is not a multi-byte sequence,
                 # move to the next byte
-                if expected_continuation_bytes == 0:
-                    continue
-                if expected_continuation_bytes == 1 or\
-                        expected_continuation_bytes > 4:
-                    return False
+            if expected_continuation_bytes == 0:
+                continue
+            if expected_continuation_bytes == 1 or\
+                    expected_continuation_bytes > 4:
+                return False
         # If we are expecting continuation bytes
         else:
             # Check that the byte starts with a "10"
