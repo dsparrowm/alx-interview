@@ -1,4 +1,4 @@
-#!/usr/bin/python3 
+#!/usr/bin/python3
 """N Quuens placement on NxN chessboard"""
 import sys
 
