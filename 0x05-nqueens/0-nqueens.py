@@ -1,6 +1,6 @@
 #!/usr/bin/python3 
 """N Quuens placement on NxN chessboard"""
- import sys
+import sys
 
 
 def generate_solutions(row, column):
